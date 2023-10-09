@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rl-ssm"
+version = "0.1.0"
+description = ""
+authors = ["TheLemonPig <joshua_hewson@brown.edu>"]
+readme = "README.md"
+packages = [{include = "rl_ssm"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytensor = "^2.17.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
