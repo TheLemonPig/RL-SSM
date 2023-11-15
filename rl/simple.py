@@ -1,7 +1,8 @@
 import numpy as np
 from typing import List
-from distribution import Distribution
 import matplotlib.pyplot as plt
+
+from rl.distribution import Distribution
 
 
 def softmax(qs, tau):

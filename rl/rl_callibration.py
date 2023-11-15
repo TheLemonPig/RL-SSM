@@ -1,12 +1,13 @@
-from rl_pymc import LogLike
+import numpy as np
 import pymc as pm
 import pytensor.tensor as pt
-from rl_ll import rl_ll
-import numpy as np
 import matplotlib.pyplot as plt
-from distribution import Distribution
 from tqdm import tqdm
-from simple import SimpleRL
+
+from rl.rl_pymc import LogLike
+from rl.rl_ll import rl_ll
+from rl.distribution import Distribution
+from rl.simple import SimpleRL
 
 
 def fit_pymc(R, C, priors):
@@ -32,7 +33,7 @@ def sample(n_trials, distributions, a, b):
     return SimpleRL(n_trials=n_trials, distributions=distributions).simulate(alpha=a, temperature=b)
 
 
-def test_rl_calibration():
+def rl_calibration():
     quantiles = np.zeros((nrep, 2))
     for rep_i in tqdm(range(nrep)):
         a_true = np.random.uniform(*a_range)

@@ -1,6 +1,6 @@
-from distribution import Distribution
-from simple import softmax, SimpleRL
-from rl_pytensor import pt_model
+from rl.distribution import Distribution
+from rl.simple import softmax, SimpleRL
+from rl.rl_pytensor import pt_model
 import numpy as np
 
 

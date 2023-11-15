@@ -1,11 +1,11 @@
 import pymc as pm
 import pytensor.tensor as pt
 import numpy as np
-from rl_ll import rl_ll
 import matplotlib.pyplot as plt
 import arviz as az
-from simple import SimpleRL
-from distribution import Distribution
+from rl.rl_ll import rl_ll
+from rl.simple import SimpleRL
+from rl.distribution import Distribution
 
 
 # define a pytensor Op for our likelihood function

@@ -1,0 +1,12 @@
+module: unloading 'graphviz/2.40.1'
+module: loading 'graphviz/2.40.1'
+module: unloading 'python/3.9.0'
+module: loading 'python/3.9.0'
+module: unloading 'git/2.29.2'
+module: loading 'git/2.29.2'
+WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+Multiprocess sampling (4 chains in 4 jobs)
+CompoundStep
+>Slice: [a]
+>Slice: [b]
+slurmstepd: error: *** JOB 12074220 ON node1704 CANCELLED AT 2023-11-15T14:10:33 ***
