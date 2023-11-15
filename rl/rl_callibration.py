@@ -33,7 +33,7 @@ def sample(n_trials, distributions, a, b):
     return SimpleRL(n_trials=n_trials, distributions=distributions).simulate(alpha=a, temperature=b)
 
 
-def rl_calibration():
+def test_rl_calibration():
     quantiles = np.zeros((nrep, 2))
     for rep_i in tqdm(range(nrep)):
         a_true = np.random.uniform(*a_range)
