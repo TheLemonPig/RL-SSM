@@ -1,3 +1,7 @@
 # Local files
 *.DS_Store
 *.idea
+
+# Log files
+*.out
+*.err
