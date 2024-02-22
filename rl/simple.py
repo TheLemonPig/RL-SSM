@@ -1,6 +1,6 @@
 import numpy as np
 from typing import List
-import matplotlib.pyplot as plt
+
 
 from rl.distribution import Distribution
 
@@ -62,4 +62,4 @@ if __name__ == "__main__":
     qs_predict = rl_model.q_trace
     
     # Plot Q-values
-    plt.plot(qs_predict)
+    #plt.plot(qs_predict)
