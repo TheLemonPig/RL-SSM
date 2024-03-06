@@ -5,3 +5,7 @@
 # Log files
 *.out
 *.err
+
+# Local Config
+*.lock
+venv/
