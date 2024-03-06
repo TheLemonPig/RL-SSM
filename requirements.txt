@@ -4,3 +4,4 @@ pytensor~=2.17.3
 pymc~=5.9.1
 arviz~=0.16.1
 tqdm~=4.64
+scipy>=1.0
